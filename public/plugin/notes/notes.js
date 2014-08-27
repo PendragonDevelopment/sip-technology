@@ -69,6 +69,7 @@ var RevealNotes = (function() {
 		if ( document.querySelector( ':focus' ) !== null || event.shiftKey || event.altKey || event.ctrlKey || event.metaKey ) return;
 
 		if( event.keyCode === 83 ) {
+			alert("'s' pressed.");
 			event.preventDefault();
 			openNotes();
 		}
