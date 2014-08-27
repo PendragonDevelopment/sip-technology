@@ -42,12 +42,7 @@
         </section>
         <section>
           <h2>Who am I?</h2>
-          <img src="http://bukk.it/koalafied.jpg" alt="">
-        </section>
-        <section>
-          <img src="/img/VC_logo_full_tag.png" alt="">
-          <h2>@GetVitaminC CTO<strike>&nbsp;/Lead Developer&nbsp;</strike></h2>
-          <p>(Managing people takes a lot of time - but that's a different subject)</p>
+          <img class="no-border" src="http://bukk.it/koalafied.jpg" alt="">
         </section>
         <section>
           <h3>Co-Organizer Developers of Athens meetup (@AthSoftwareDev)</h3>
@@ -55,26 +50,39 @@
           <h3>CompTIA A+, Network+, and Security+ Certified</h3>
         </section>
         <section>
-          <img src="/img/BurtMacklin.jpg" alt="">
+          <img class="no-border" src="/img/VC_logo_full_tag.png" alt="">
+          <h2>@GetVitaminC CTO<strike>&nbsp;/Lead Developer&nbsp;</strike></h2>
+          <p>(Managing people takes a lot of time - but that's a different subject)</p>
+        </section>
+        <section>
+          <h2>We're building a platform to make healthcare communication better.</h2>
+          <h3>Data, messaging, automated reminders - it's all protected</h3>
+        </section>
+        <section>
+          <img class="no-border" src="/img/BurtMacklin.jpg" alt="">
           <h2><strike>&nbsp;&nbsp;Burt Macklin, FBI&nbsp;&nbsp;</strike></h2>
           <p>(Shh, the President's enemies think I'm dead)</p>
         </section>
         <section>
           <h2>Part 1: Nothing is safe</h2>
-          <img src="http://bukk.it/theheist.jpg" alt="">
+          <img class="no-border" src="http://bukk.it/theheist.jpg" alt="">
         </section>
         <section>
           <h2>Technology + humans = vulnerability</h2>
         </section>
         <section>
           <h2>Social Engineering</h2>
-          <img src="http://bukk.it/subterfuge.jpg" alt="">
+          <img class="no-border" src="http://bukk.it/subterfuge.jpg" alt="">
           <p>You know, when your friend "hacks" your Facebook page</p>
         </section>
         <section>
           <h2>Man in the Middle attacks</h2>
-          <img src="http://bukk.it/yourecat.gif" alt="">
+          <img class="no-border" src="http://bukk.it/yourecat.gif" alt="">
           <p>Oh, this image looks innocuous, let me see where it leads...</p>
+        </section>
+        <section>
+          <h2>DDoS Attacks</h2>
+          <img src="http://bukk.it/whar.gif" alt="">
         </section>
         <section>
           <h2>Algorithmic Complexity Attacks</h2>
@@ -91,17 +99,17 @@
         </section>
         <section>
           <h3>Incognito tabs count, right?</h3>
-          <img src="http://bukk.it/stealth.jpg" alt="">
+          <img class="no-border" src="http://bukk.it/stealth.jpg" alt="">
           <aside class="notes">Incognito tabs or private tabs only disables extensions and clears your browsers cookies at the end of your session. Websites (ie, Facebook) can still track your movement, and your browser can still track your bookmarks and general settings.</aside>
         </section>
         <section>
           <h3>Hierarchy of IT Needs</h3>
-          <img src="http://informationsecurity.451research.com/wp-uploads/2014/08/hierarchyofITneeds-577x430.jpg" alt="">
+          <img class="no-border" src="http://informationsecurity.451research.com/wp-uploads/2014/08/hierarchyofITneeds-577x430.jpg" alt="">
           <p>JUST MAKE IT WORK PLZ THANKS</p>
         </section>
         <section>
           <h2>Part 2: A Champion Emerges</h2>
-          <img src="http://bukk.it/usofr.gif" alt="">
+          <img class="no-border" src="http://bukk.it/usofr.gif" alt="">
         </section>
         <section>
           <h3>Well, makes it easier for you.</h3>
@@ -109,7 +117,7 @@
         </section>
         <section>
           <h3>Protection against Cross-Site Request Forgery (CSRF)</h3>
-          <img src="http://guides.rubyonrails.org/images/csrf.png" alt="">
+          <img class="no-border" src="http://guides.rubyonrails.org/images/csrf.png" alt="">
         </section>
         <section>
           <h3>Rails adds tokens to your pages and requires you to specify the correct HTTP protocol in routes.</h3>
@@ -127,14 +135,147 @@
         <section>
           <h3>Cross Site Scripting (XSS)</h3>
           <p>The most widespread, and one of the most devastating security vulnerabilities in web applications is XSS. This malicious attack injects client-side executable code. Rails provides helper methods to fend these attacks off.</p>
+          <img src="http://bukk.it/webdesign.gif" alt="" class="no-border">
         </section>
         <section>
           <h3>Input sanitizing</h3>
           <p>Client-side and server-side sanitizing. It's better to whitelist than blacklist (much like strong_parameters forces us to do).</p>
-          <img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="">
+          <img class="no-border" src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="">
         </section>
         <section>
-
+          <h2>Authentication</h2>
+          <h4>Ensuring that an entity is who they claim</h4>
+          <h2>Authorization</h2>
+          <h4>Ensuring that an entity has the proper access rights for the resource they're requesting</h4>
+        </section>
+        <section>
+          <h2>Authentication Gems</h2>
+          <ul>
+            <li>
+              <h3>Devise - <a href="https://github.com/plataformatec/devise">https://github.com/plataformatec/devise</a></h3>
+            </li>
+            <li>
+              <h3>Sorcery - <a href="https://github.com/NoamB/sorcery">https://github.com/NoamB/sorcery</a></h3>
+            </li>
+            <li>
+              <h3>BCrypt (if you want to roll your own) - <a href="https://github.com/codahale/bcrypt-ruby">https://github.com/codahale/bcrypt-ruby</a></h3>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Authorization Gems</h2>
+          <ul>
+            <li>
+              <h3>CanCanCan - <a href="https://github.com/CanCanCommunity/cancancan">https://github.com/CanCanCommunity/cancancan</a></h3>
+            </li>
+            <li>
+              <h3>Authority - <a href="https://github.com/nathanl/authority">https://github.com/nathanl/authority</a></h3>
+            </li>
+            <li>
+              <h3>Doorkeeper (OAuth) - <a href="https://github.com/doorkeeper-gem/doorkeeper">https://github.com/doorkeeper-gem/doorkeeper</a></h3>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Part 3: HIPAA - It's easier than it looks</h2>
+          <img class="no-border" src="http://cdn.someecards.com/someecards/usercards/1348699773169_3555197.png" alt="">
+        </section>
+        <section>
+          <h2>What is HIPAA?</h2>
+          <ul>
+            <li><h4>Title 1 protects health insurance coverage for workers and their families</h4></li>
+            <li><h4>Title 2 the establishment of national standards for electronic health care transactions and national identifiers for providers</h4></li>
+            <li><h3>HAHAHAHAHAHAHAHAHAHAHA</h3></li>
+          </ul>
+        </section>
+        <section>
+          <img src="http://hipaanews.net/files/2010/07/cartoon_12.gif" alt="" class="no-border">
+        </section>
+        <section>
+          <h2>What isn't HIPAA?</h2>
+          <p>This may be the wrong question to ask. HIPAA was designed to give patients more control over who had access to their health information. This has not been the winning strategy one would think.</p>
+        </section>
+        <section>
+          <img src="http://media-cache-ec0.pinimg.com/236x/2b/3b/58/2b3b58ee3b9de5a76dcef03a0086e7f1.jpg" alt="" class="no-border">
+        </section>
+        <section>
+          <h3>Okay, well, what does it take to get HIPAA compliance certification?</h3>
+          <img src="http://bukk.it/thxpalpatine.gif" alt="" class="no-border">
+        </section>
+        <section>
+          <h3>HIPAA Compliance is only validated when audited or when breached</h3>
+          <h4>Comforting, right?</h4>
+        </section>
+        <section>
+          <h2>What you can do</h2>
+          <h3>Encrypt EVERYTHING</h3>
+          <ul>
+            <li>
+              <h4>CryptKeeper - <a href="https://github.com/jmazzi/crypt_keeper">https://github.com/jmazzi/crypt_keeper</a></h4>
+            </li>
+            <li>
+              <h4>AESCrypt - <a href="https://github.com/Gurpartap/aescrypt">https://github.com/Gurpartap/aescrypt</a></h4>
+            </li>
+            <li>
+              <h4>Gibberish - <a href="https://github.com/mdp/gibberish">https://github.com/mdp/gibberish</a></h4>
+            </li>
+            <li>
+              <h4>attr_encrypted - <a href="https://github.com/attr-encrypted/attr_encrypted">https://github.com/attr-encrypted/attr_encrypted</a></h4>
+            </li>
+            <li>
+              <h4>Symmetric Encryption - <a href="https://github.com/reidmorrison/symmetric-encryption">https://github.com/reidmorrison/symmetric-encryption</a></h4>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>SSL on everything</h2>
+          <h3>As developers, we should start advocating for this anyways</h3>
+        </section>
+        <section>
+          <h2>Plan for failure</h2>
+          <img src="http://bukk.it/wilto.gif" alt="" class="no-border">
+          <h3>Data breach is inevitable. Have a plan.</h3>
+        </section>
+        <section>
+          <h2>Part 4: How Vitamin C handle HIPAA</h2>
+        </section>
+        <section>
+          <h2>Omnibus Rule (Sept 2013)</h2>
+          <h3>Cloud providers are now covered by implicit BAA's</h3>
+          <h4>Um. Okay. What does that mean, exactly?</h4>
+        </section>
+        <section>
+          <h2>Amazon Web Services</h2>
+          <h3>Hardware, Availability Zone, and Region Failure</h3>
+          <h4>Spend more for failover (oops)</h4>
+          <img src="http://bukk.it/wandows.jpg" alt="" class="no-border">
+        </section>
+        <section>
+          <h2>SSL, SSL Everywhere</h2>
+          <h4>Your brute force attacks are ineffective!</h4>
+          <img src="http://bukk.it/wellfuckit.gif" alt="" class="no-border">
+          <p>Even in our own Virtual Private Cloud, all of our traffic is encrypted over SSL</p>
+        </section>
+        <section>
+          <h2>Lock down your ports</h2>
+          <h4>Audit and make sure you know who is on your network - No UFOs</h4>
+          <img src="http://bukk.it/ufo.jpg" alt="" class="no-border">
+        </section>
+        <section>
+          <h2>Questions?</h2>
+          <h3>About HIPAA and Security</h3>
+        </section>
+        <section>
+          <h2>Rails Girls Athens!</h2>
+          <img src="/img/RG_LogoFinal.jpg" alt="">
+          <h3><a href="http://railsgirlsathens.com">http://railsgirlsathens.com</a></h3>
+          <h3>October 10-11</h3>
+        </section>
+        <section>
+          <h2>Thanks for listening!</h2>
+          <h3>Twitter: <a href="https://twitter.com/PendragonDev">@PendragonDev</a></h3>
+          <h3>Email: <a href="mailto:jordan@getvitaminc.com">jordan@getvitaminc.com</a></h3>
+          <h3>Website: <a href="https://getvitmainc.com">getvitaminc.com</a></h3>
         </section>
       </div>
     </div>
